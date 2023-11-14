@@ -72,6 +72,13 @@ const Lab5 = (app) => {
     res.sendStatus(200);
   });
 
+  if (!todos) {
+    res.res
+      .status(404)
+      .json({ message: `Unable to delete Todo with ID ${id}` });
+    return;
+  }
+
   app.get("/a5/todos/:id", (req, res) => {
     const { id } = req.params;
     const todo = todos.find((t) => t.id === parseInt(id));
