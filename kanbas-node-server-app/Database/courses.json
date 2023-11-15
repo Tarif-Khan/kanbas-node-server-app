@@ -36,6 +36,18 @@
 },
 {
   "_id": {
+    "$oid": "123456789"
+  },
+  "name": "Fundies",
+  "number": "RS4550",
+  "startDate": "2023-01-10",
+  "endDate": "2023-05-15",
+  "department": "D123",
+  "credits": 4,
+  "description": "Fundies"
+},
+{
+  "_id": {
     "$oid": "65510e70870c092d5441bc97"
   },
   "name": "Organic Chemistry",
