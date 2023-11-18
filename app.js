@@ -4,6 +4,7 @@ import Lab5 from "./Lab5.js";
 import cors from "cors";
 import CourseRoutes from "./Courses/routes.js";
 import ModuleRoutes from "./Modules/routes.js";
+import "dotenv/config";
 
 const app = express();
 app.use(express.json());
