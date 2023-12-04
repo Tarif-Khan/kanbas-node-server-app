@@ -5,6 +5,9 @@ import cors from "cors";
 import CourseRoutes from "./Courses/routes.js";
 import ModuleRoutes from "./Modules/routes.js";
 import "dotenv/config";
+import mongoose from "mongoose";
+mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
+import UserRoutes from "./Users/routes.js";
 
 const app = express();
 app.use(express.json());
@@ -14,4 +17,5 @@ Lab5(app);
 Hello(app);
 CourseRoutes(app);
 ModuleRoutes(app);
+UserRoutes(app);
 app.listen(process.env.PORT || 4000);
