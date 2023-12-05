@@ -31,7 +31,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: "*",
+    origin: "https://a6--moonlit-panda-666437.netlify.app",
   })
 );
 // app.use(cors());
