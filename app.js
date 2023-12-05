@@ -34,6 +34,15 @@ app.use(
     origin: process.env.FRONTEND_URL,
   })
 );
+app.use((req, res, next) => {
+  res.header(
+    "Access-Control-Allow-Origin",
+    "https://a6--moonlit-panda-666437.netlify.app"
+  );
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+});
 Lab5(app);
 Hello(app);
 CourseRoutes(app);
